@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['389090790984515594','350408440566382592'];
+const devs = ['318705077734998017','318705077734998017'];
 var prefix = "!";
 const adminprefix = "!"
 const db = require('quick.db');
@@ -335,7 +335,7 @@ coll.first().delete()
 client.on('ready', function(){
   client.user.setStatus("dnd");
     var ms = 40000 ;	
-    var setGame = ['!inv','!help'];	
+	    var setGame = ['BY|SHADOW','!help'];	
     var i = -1;	
     var j = 0;	
     setInterval(function (){	
@@ -541,8 +541,6 @@ if (message.content.startsWith(prefix + 'help')) { /// This is The DMS Code Send
 『!ban @user <reason> / حضر الشخص من السيرفر』
 『!mutechannel / تقفيل الشات』
 『!unmutechannel / فتح الشات』
-『!dc / مسح كل الرومات』
-『!dr / <مسح كل الرانكات <لازم تكون رانك البوت فوق كل الرانكات』
 『!ct <name> / انشاء شات』
 『!cv <name> / انشاء رووم فويس』
 『!delet <name> / مسح الشات او الرووم فويس』
@@ -2554,7 +2552,7 @@ let args = message.content.split(" ").slice(1).join(" ");
 
 
 
-client.users.get("443753851053408258").send(
+client.users.get("318705077734998017").send(
     "\n" + "**" + "● السيرفر :" + "**" +
     "\n" + "**" + "» " + message.guild.name + "**" +
     "\n" + "**" + " ● المرسل : " + "**" +
@@ -2566,7 +2564,7 @@ let embed = new Discord.RichEmbed()
      .setAuthor(message.author.username, message.author.avatarURL)
      .setDescription(':mailbox_with_mail: تم ارسال الرسالة الى صاحب البوت بنجاح')
      .setThumbnail(message.author.avatarURL)
-     .setFooter("By : MHSTR")
+     .setFooter("By : SHADOW")
                                                 
 
 message.channel.send(embed);
@@ -2723,8 +2721,8 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`:small_orange_diamond: click here `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=471464656242737183&permissions=2080898225&scope=bot`)
-        .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
+        .setURL(`https://discordapp.com/api/oauth2/authorize?client_id=531927102472060943&permissions=8&scope=bot`)
+        .setThumbnail(" ")        
      message.channel.sendEmbed(embed);
        }
    });
@@ -2773,32 +2771,13 @@ client.on('message', message => {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/yDHQZhC**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/6RxsvwD**")
      
      
   message.channel.sendEmbed(embed);
     }
 });
-client.on('message', omar => {
-var prefix = "!";
-if(omar.content.split(' ')[0] == prefix + 'dc') {  // delete all channels
-if (!omar.channel.guild) return;
-if(!omar.guild.member(omar.author).hasPermission("MANAGE_CHANNELS")) return omar.reply("**You Don't Have ` MANAGE_CHANNELS ` Permission**");
-if(!omar.guild.member(client.user).hasPermission("MANAGE_CHANNELS")) return omar.reply("**I Don't Have ` MANAGE_CHANNELS ` Permission**");
-omar.guild.channels.forEach(m => {
-m.delete();
-});// omar jedol / Codes
-}// omar jedol / Codes
-if(omar.content.split(' ')[0] == prefix + 'dr') { // delete all roles
-if (!omar.channel.guild) return;
-if(!omar.guild.member(omar.author).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return omar.reply("**You Don't Have ` MANAGE_ROLES_OR_PERMISSIONS ` Permission**");
-if(!omar.guild.member(client.user).hasPermission("MANAGE_ROLES_OR_PERMISSIONS")) return omar.reply("**I Don't Have ` MANAGE_ROLES_OR_PERMISSIONS ` Permission**");
-omar.guild.roles.forEach(m => {
-m.delete();
-});// omar jedol / Codes
-omar.reply("`تم حذف جميع الرتب بنجاح`")
-}// omar jedol / Codes
-});
+
 
 client.on('message', message => {
 	var prefix = "!";
@@ -2875,7 +2854,7 @@ client.on("message", (message) => {
 });  
 
 const sWlc = {}
-const premium = ['389090790984515594']
+const premium = ['318705077734998017']
 client.on('message', message => {
 var prefix = "!";
 if(message.channel.type === "dm") return;
