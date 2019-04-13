@@ -1561,6 +1561,14 @@ if(!args[0]) return message.reply('مرجو كتابة نص الدي تريد');
 }
 });
 
+function getValue(key, array) {
+  for (var el in array) {
+    if (array[el].hasOwnProperty(key)) {
+      return array[el][key];
+    }
+  }
+}
+
 client.on('message', message => {
 	var prefix ="!";
  let args = message.content.split(' ').slice(1);
