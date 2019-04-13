@@ -1582,7 +1582,15 @@ google({ query: input, disableConsole: true }).then(results => {
 });
 
 }});
- 
+
+ function getValue(key, array) {
+  for (var el in array) {
+    if (array[el].hasOwnProperty(key)) {
+      return array[el][key];
+    }
+  }
+}
+
 client.on('message', message => {
    if(!message.channel.guild) return;
 if(message.content.startsWith(prefix + 'bc')) {
