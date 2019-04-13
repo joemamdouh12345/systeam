@@ -1165,7 +1165,7 @@ reaction3.on("collect", r => {
 
  client.on('message', message => {
 	 var prefix ="!";
- if(message.content.startsWith(prefix +"server")){
+ if(message.content.startsWith(prefix +"SHADOW")){
 if(!message.channel.guild) return message.reply(' ');
 const millis = new Date().getTime() - message.guild.createdAt.getTime();
 const now = new Date();
@@ -1235,7 +1235,7 @@ var heroo = new Discord.RichEmbed()
 .setColor('#6a109d')
 .setTimestamp(new Date())
 .setThumbnail(client.user.avatarURL)
-.setTitle('SLiver Bot Info')
+.setTitle('SHADOW Bots Info')
 .setURL('https://discordapp.com/oauth2/authorize?client_id=471464656242737183&permissions=2080898225&scope=bot')
 .setAuthor(client.user.username,client.user.avatarURL)
 .addField("**البرفكس** :",`**[ ${prefix} ]**`,true)
