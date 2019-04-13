@@ -1582,7 +1582,6 @@ google({ query: input, disableConsole: true }).then(results => {
 });
 
 }});
-
  function getValue(key, array) {
   for (var el in array) {
     if (array[el].hasOwnProperty(key)) {
